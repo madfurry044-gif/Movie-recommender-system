@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pickle
 import pandas as pd
@@ -14,7 +13,7 @@ st.set_page_config(
 # ---------- Load model ----------
 @st.cache_resource
 def load_data():
-    movies = pickle.load(open('movies.pkl', 'rb'))
+    movies = pickle.load(open('movies (1).pkl', 'rb'))
     similarity = pickle.load(open('similarity.pkl', 'rb'))
     return movies, similarity
 
